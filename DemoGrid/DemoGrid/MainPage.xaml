@@ -4,8 +4,21 @@
              xmlns:local="clr-namespace:DemoGrid"
              x:Class="DemoGrid.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Text="Botón 1" BackgroundColor="Green"></Button>
+        <Button Text="Botón 2" BackgroundColor="Orange" Grid.Row="1"></Button>
+        <Button Text="Botón 3" BackgroundColor="Red" Grid.Row="2" Grid.Column="1"></Button>
+        <Button Text="Botón 4" BackgroundColor="Blue" Grid.Row="3"></Button>
+    </Grid>
 
 </ContentPage>
