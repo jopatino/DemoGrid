@@ -5,20 +5,25 @@
              x:Class="DemoGrid.MainPage">
 
 
-    <Grid>
+    <Grid ColumnSpacing="0"
+          RowSpacing="0">
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Button Text="Botón 1" BackgroundColor="Green"></Button>
-        <Button Text="Botón 2" BackgroundColor="Orange" Grid.Row="1"></Button>
-        <Button Text="Botón 3" BackgroundColor="Red" Grid.Row="2" Grid.Column="1"></Button>
-        <Button Text="Botón 4" BackgroundColor="Blue" Grid.Row="3"></Button>
+        <Button Text="Botón 2" BackgroundColor="Brown" Grid.Column="1"></Button>
+        <Button Text="Botón 3" BackgroundColor="Orange" Grid.Row="1"></Button>
+        <Button Text="Botón 4" BackgroundColor="Silver" Grid.Row="1" Grid.Column="1"></Button>
+        <Button Text="Botón 5" BackgroundColor="Red" Grid.Row="2"></Button>
+        <Button Text="Botón 6" BackgroundColor="Blue" Grid.Row="2" Grid.Column="1"></Button>
+        <Button Text="Botón 7" BackgroundColor="Chocolate" Grid.Row="3" Grid.ColumnSpan="2"></Button>
     </Grid>
 
 </ContentPage>
