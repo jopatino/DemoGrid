@@ -10,13 +10,15 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Heigh="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        
         <Button Text="Botón 1" BackgroundColor="Green"></Button>
         <Button Text="Botón 2" BackgroundColor="Brown" Grid.Column="1"></Button>
         <Button Text="Botón 3" BackgroundColor="Orange" Grid.Row="1"></Button>
@@ -24,6 +26,11 @@
         <Button Text="Botón 5" BackgroundColor="Red" Grid.Row="2"></Button>
         <Button Text="Botón 6" BackgroundColor="Blue" Grid.Row="2" Grid.Column="1"></Button>
         <Button Text="Botón 7" BackgroundColor="Chocolate" Grid.Row="3" Grid.ColumnSpan="2"></Button>
+
+        <BoxView BackgroundColor="DarkGreen" Grid.Column="2"></BoxView>
+        <BoxView BackgroundColor="Azure" Grid.Row="1" Grid.Column="2"></BoxView>
+        <BoxView BackgroundColor="Purple" Grid.Row="2" Grid.Column="2"></BoxView>
+        <BoxView BackgroundColor="Violet" Grid.Row="3" Grid.Column="2"></BoxView>
     </Grid>
 
 </ContentPage>
